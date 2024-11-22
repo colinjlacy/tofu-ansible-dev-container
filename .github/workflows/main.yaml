@@ -54,7 +54,7 @@ jobs:
         with:
           platforms: ${{ matrix.platform }}
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ghcr.io/colinjlacy/tofu-ansible-dev-container:latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation

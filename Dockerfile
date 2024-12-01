@@ -1,6 +1,6 @@
 FROM debian:12.8
 # Install Ansible & required packages:
-RUN apt update && apt -y install ansible
+RUN apt update && export DEBIAN_FRONTEND=noninteractive && apt -y install ansible
 
 # Download the OpenTofu installer script:
 RUN wget https://get.opentofu.org/install-opentofu.sh -O install-opentofu.sh

@@ -1,4 +1,9 @@
 {
   "name": "TofuAnsible",
-  "image": "ghcr.io/colinjlacy/tofu-ansible-dev-container:latest"
+  "image": "ghcr.io/colinjlacy/tofu-ansible-dev-container:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": ["gamunu.opentofu", "redhat.ansible"]
+    }
+  }
 }

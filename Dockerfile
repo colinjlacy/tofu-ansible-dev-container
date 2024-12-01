@@ -1,5 +1,4 @@
-FROM alpine:3.20.3
-
+FROM debian:12.8
 # Install Ansible & required packages:
 RUN apk add --update --no-cache ansible bash openssh sshpass git
 

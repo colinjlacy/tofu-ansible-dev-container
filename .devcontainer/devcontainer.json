@@ -17,5 +17,6 @@
             "version": "latest",
             "moby": true
         }
-    }
+  },
+  "remoteUser": "vscode"
 }

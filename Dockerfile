@@ -9,7 +9,7 @@ RUN wget https://get.opentofu.org/install-opentofu.sh -O install-opentofu.sh
 RUN chmod +x install-opentofu.sh
 
 # Run the installer:
-RUN ./install-opentofu.sh --install-method apk
+RUN ./install-opentofu.sh --install-method deb
 
 # Remove the installer:
 RUN rm -f install-opentofu.sh

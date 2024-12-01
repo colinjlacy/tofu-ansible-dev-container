@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: build-and-push-image
-        uses: mr-smithers-excellent/docker-build-push@v5
+        uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: ${{ env.IMAGE_NAME }}
           registry: ${{ env.REGISTRY }}

@@ -1,4 +1,21 @@
 {
   "name": "TofuAnsible",
-  "image": "ghcr.io/colinjlacy/tofu-ansible-dev-container:latest"
+  "image": "ghcr.io/colinjlacy/tofu-ansible-dev-container:latest",
+  "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        },
+	      "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {
+            "version": "latest",
+            "moby": true
+        }
+    }
 }

@@ -1,3 +1,4 @@
 {
+  "name": "TofuAnsible",
   "image": "ghcr.io/colinjlacy/tofu-ansible-dev-container:latest"
 }

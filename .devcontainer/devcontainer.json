@@ -2,6 +2,7 @@
   "name": "TofuAnsible",
   "image": "ghcr.io/colinjlacy/tofu-ansible-dev-container:latest",
   "customizations": {
+    "postCreateCommand": "ansible-galaxy collection install cisco.ios cisco.nxos",
     "vscode": {
       "extensions": ["gamunu.opentofu", "redhat.ansible"]
     }

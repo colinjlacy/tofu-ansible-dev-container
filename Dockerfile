@@ -1,5 +1,7 @@
 FROM alpine:3.20.3
 
+LABEL org.opencontainers.image.description="Development environment for OpenTofu and Ansible"
+
 # Install Ansible & required packages:
 RUN apk add --update --no-cache ansible bash openssh sshpass git
 
